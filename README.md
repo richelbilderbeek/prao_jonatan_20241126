@@ -24,7 +24,7 @@ Measure big-O complexity, [Programming Formalisms exercise](https://uppmax.githu
 > you'll get it done in the end. Remember the goal of a PRAO.
 > The start is the hardest, it gets easier.
 > [Emil](https://github.com/richelbilderbeek/prao_emil_20240603)
-
+>
 > Make sure to get a good idea of what to do before starting so that
 > you don't loose time due to missunderstaning the assignment.
 > [Frans](https://github.com/richelbilderbeek/prao_frans_20241114)
