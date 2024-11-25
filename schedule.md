@@ -8,7 +8,7 @@ Start|What
 10:00|Go to Richel's office [B9:430b](office.md)
 10:15|Discuss goal of PRAO
 .    |Discuss project of PRAO
-.    |Discuss method of archieving goal: [report](report.md) and [reflection](reflection.md)
+.    |Discuss method of achieving goal: [report](report.md) and [reflection](reflection.md)
 .    |Log in PRAO student (if needed)
 .    |Discuss practical things (a.o. access card, toilet)
 10:45|Work on project
