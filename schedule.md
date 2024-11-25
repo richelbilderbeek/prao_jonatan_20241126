@@ -1,6 +1,6 @@
 # Schedule
 
-## Thursday November 25th
+## Tuesday November 25th
 
 Start|What
 -----|-----
