@@ -1,5 +1,6 @@
 import time
 import csv
+import matplotlib.pyplot as plt
 
 def is_prime(num):
     if num > 1:
@@ -9,28 +10,42 @@ def is_prime(num):
         return True
     else:
         return False
+    
+def is_prime_2(num):
+  for n in range(
+    2, int(num**0.5)+1
+  ):
+    if num%n==0:
+      return False
+  return True
 
-fields = ["Values"]
-rows = []
+def calculate_prime(method1):
+  times = []
+  numbers = []
 
-for i in range(0, 100):
-    # Measure time
-    start = time.perf_counter()
-    is_prime(i)
-    end = time.perf_counter()
-    elapsed = round((end - start) * 1000, 2)
+  for i in range(0, 10000):
+      start = time.perf_counter()
 
-    rows.append([str(elapsed)])
+      if(method1):
+        is_prime(i)
+      else:
+         is_prime_2(i)
 
-# Open file for writing
-with open("is_prime_1.csv", "w", newline='') as csvfile:
-    csv_writer = csv.writer(csvfile)
-    csv_writer.writerow(fields)
-    csv_writer.writerows(rows)
+      end = time.perf_counter()
+      elapsed = (end - start) * 1000 #Time in ms
+      times.append(elapsed)
+      numbers.append(i)
 
-# Open file for reading and print its contents
-with open("is_prime_1.csv", "r") as file:
-    print(file.read())
+  plt.plot(numbers, times)
+  plt.xlabel("X-axis")
+  plt.ylabel("Y-axis")
+
+  plt.show()
+
+calculate_prime(True)
+calculate_prime(False)
+
+
 
 print("Done!")
 #type: ignore
