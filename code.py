@@ -20,9 +20,8 @@ def is_prime_2(num):
   return True
 
 def calculate_prime(method1):
-  times = []
-  numbers = []
-
+  values = []
+  
   for i in range(0, 10000):
       start = time.perf_counter()
 
@@ -33,19 +32,19 @@ def calculate_prime(method1):
 
       end = time.perf_counter()
       elapsed = (end - start) * 1000 #Time in ms
-      times.append(elapsed)
-      numbers.append(i)
+      values.append(elapsed)
 
-  plt.plot(numbers, times)
-  plt.xlabel("X-axis")
-  plt.ylabel("Y-axis")
+  plt.plot(list(range(0, 10000)), values)
+  plt.xlabel("Numbers")
+  plt.ylabel("Time(in ms)")
+  if(method1):
+     plt.title("Method 1")
+  else:
+     plt.title("Method 2")
 
   plt.show()
 
 calculate_prime(True)
 calculate_prime(False)
 
-
-
-print("Done!")
 #type: ignore

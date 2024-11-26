@@ -78,3 +78,5 @@ def is_prime_2(num):
 ```
 
 Done: make a plot of these values :-)
+
+Today I got to feel what it is like to work at BMC. I coded a program comparing the time to calculate prime numbers with two methods. I also got to know what Richel does for a living. He explained what people do at BMC and showed me around in the building.
