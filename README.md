@@ -1,4 +1,4 @@
-# PRAO of Frans
+# PRAO of Jonatan
 
 - When: November 26th 2024 9:00-16:00 (see [schedule](schedule.md))
 - Where in Uppsala: Biomedical Center, Husargatan:
