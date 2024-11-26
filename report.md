@@ -63,3 +63,18 @@ input_value,runtime
 
 This is not a problem: higher values will be non-zero.
 
+Done? Then save this to a text file called `is_prime_1.csv` instead.
+
+Done: then do the same for the function belowd, save to `is_prime_2.csv` instead:
+
+```python
+def is_prime_2(num):
+  for n in range(
+    2, int(num**0.5)+1
+  ):
+    if num%n==0:
+      return False
+  return True
+```
+
+Done: make a plot of these values :-)
